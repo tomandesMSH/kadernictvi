@@ -1,79 +1,105 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
-}
-
-p, h1, h2 {
     font-family: sans-serif;
 }
 
-h1 {
-    text-align: center;
+h1, h2, p {
+    margin: 0;
 }
 
-.uvod h1 {
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 80px;
+.land {
+    position: relative;
+    height: 900px;
     color: white;
-    text-shadow: 2px 2px 2px #000000;
-    margin-top: 200px;
-}
-.uvod h2 {
     text-align: center;
-    font-family: sans-serif;
-    font-size: 30px;
-    color: white;
-    text-shadow: 2px 2px 2px #000000;
-    margin-top: -20px;
+    overflow: hidden;
+}
+
+.land_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.50);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .nav {
     display: flex;
-    width: 100%;
-    height: 100px;
+    position: fixed;
+    align-items: center;
     justify-content: center;
     gap: 45px;
-    background: #7793ed;
-    background: linear-gradient(180deg, rgba(119, 147, 237, 1) 39%, rgba(0, 174, 255, 1) 100%);
-}
-
-.uvod .uvod_img{
-    margin-top: -100;
     width: 100%;
-    height:auto;
-    position: absolute;
-    z-index: -5;
-    filter: brightness(0.8);
-}
-
-.uvod #rectangle{
-    width: 100%;
-    margin-top: 380px;
-    height: 60px;
-    background: #7793ed;
-    background: linear-gradient(0deg, rgba(119, 147, 237, 1) 39%, rgba(0, 174, 255, 1) 100%);
-}
-
-.nav a{
-    font-family: sans-serif;
-    color: white;
-    margin-top: 40px;
-    font-size: 30px;
-    transition: 0.1s;
-    text-shadow: 1px 1px 1px #000000;
-}
-
-.nav a:hover{
-    font-size:35px;
+    height: 90px;
+    background-color: aliceblue;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    top: 0;
+    left: 0;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
-    left: 500px;
-    transform: scale(0.9)
+    height: 70px;
+    width: auto;
+    transform: scale(0.95);
+    margin-right: 30px;
+}
+
+.nav a {
+    position: relative;
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.2s;
+}
+
+/* ChatGPT dopomohlo, bo ja nevim jak se exkludujou typy elementu */
+.nav a:not(:has(img))::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: #7b4f44;
+    transition: width 0.3s, height 0.3s, left 0.3s, top 0.3s;
+    z-index: -1;
+    border-radius: 20px;
+}
+
+.nav a:not(:has(img)):hover {
+    color: #DDB5A0;
+}
+
+.nav a:not(:has(img)):hover::after {
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    left: calc(50% - ((100% + 20px) / 2));
+    top: calc(50% - ((100% + 20px) / 2));
+}
+
+section {
+    padding: 120px 30px;
+    min-height: 70vh;
+}
+
+section h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+
+footer {
+  width: 980px;
+  margin: 18px auto;
+  padding: 12px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
 }
