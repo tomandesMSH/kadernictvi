@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-    <title>Kadeřnictví hlava nehlava</title>
     <link rel="stylesheet" href="style.css">
+    <title>Kadeřnictví hlava nehlava</title>
 </head>
 <body>
 
@@ -17,48 +17,114 @@
         <a href="#uvod1">Úvod</a>
         <a href="#sluzby">Služby</a>
         <a href="#cenik">Ceník</a>
-        <a href="#galerie">Galerie</a>
         <a href="#kontakty">Kontakty</a>
-        
+        <a href="#rezervace">Rezervace</a>
     </div>
 
-    <h1 style="text-align: left; margin-top: 3%">Kadeřnictví hlava nehlava</h1>
-    <h2 style="text-align: left;">Střihy co nemaj hlavu, ale mají styl!</h2>
+    <h1 style="text-align: left; margin-top: 20%; margin-left: 10%;">Kadeřnictví hlava nehlava</h1>
+    <h2 style="text-align: left; margin-left: 10%;">Střihy co nemaj hlavu, ale mají styl!</h2>
+    <a style="margin: 2% 67% 0 0;" class="objbutton" href="#rezervace"> Rezervujte si termín </a>
 </section>
 
-<section id="uvod1">
-    <h1>Úvod</h1>
-    <h2>Vítejte v kadeřnictví hlava nehlava</h2>
-    <br> <br> 
-    <p> Na místě, kde vlasy bereme s humorem, ale práci děláme poctivě.
-Náš tým se postará o to, aby váš nový účes měl styl, osobitost a aby vás jeho údržba nestála nervy ani čas.
-Ať už chcete lehkou úpravu, kompletní proměnu nebo jen poradit, jste u nás správně. </p>
+<section id="uvod1" class="flex_section">
+    <div class="txt_block">
+        <h2>Vítejte v kadeřnictví hlava nehlava</h2>
+        <p>Na místě, kde vlasy bereme s humorem, ale práci děláme poctivě a s maximální péčí. Náš tým zkušených kadeřníků se postará o to, aby váš nový účes měl styl, osobitost a aby vás jeho údržba nestála nervy ani čas.
+
+Ať už toužíte po lehké úpravě, kompletní proměně nebo jen potřebujete poradit, jste u nás správně. Každému zákazníkovi věnujeme individuální pozornost — posloucháme vaše představy, nabízíme profesionální doporučení a společně hledáme řešení, které vám bude nejen slušet, ale i vyhovovat v každodenním životě.
+
+Používáme kvalitní kosmetiku, sledujeme aktuální trendy a dbáme na to, aby se u nás každý cítil příjemně. Přijďte si odpočinout, nechat se rozmazlit a odejít s účesem, který vám dodá sebevědomí.
+
+Těšíme se na vaši návštěvu!</p>
+    </div>
+    <img class="txt_img" src="branding/interier.png">
 </section>
 
-<section id="sluzby">
-    <h1>Služby</h1>
+<section id="sluzby" class="flex_section">
+    <div class="txt_block">
+        <h1>Služby</h1>
+        <p>Nabízíme profesionální služby pro každého. Mezi naše služby patří například..</p>
+        <ul>
+            <li>Střihy a účesy</li>
+            <li>Barvení a melíry</li>
+            <li>Úprava vousů</li>
+            <li>Poradenství a styling</li>
+        </ul>
+    </div>
+    <img class="txt_img" src="branding/dybyl.webp">
 </section>
 
 <section id="cenik">
-    <h1>Ceník</h1>
+
+<div class="cenik">
+    <h1 style="margin-bottom: 40px;">Ceník služeb</h1>
+    <table>
+        <tr>
+            <th>Služba</th>
+            <th>Cena</th>
+            <th>Popis</th>
+        </tr>
+        <tr>
+            <td>Střihy a účesy</td>
+            <td class="price">375 Kč</td>
+            <td>
+                - Klasický i moderní střih<br>
+                - Úprava vlasů podle typu<br>
+                - Poradenství při výběru účesu
+            </td>
+        </tr>
+        <tr>
+            <td>Barvení a melíry</td>
+            <td class="price">750 Kč</td>
+            <td>
+                - Barvení vlasů<br>
+                - Melíry a balayage<br>
+                - Péče o barvené vlasy a konzultace barev
+            </td>
+        </tr>
+        <tr>
+            <td>Úprava vousů</td>
+            <td class="price">250 Kč</td>
+            <td>
+                - Tvarování vousů<br>
+                - Holení a úprava kníru<br>
+                - Doporučení pro péči o vousy
+            </td>
+        </tr>
+        <tr>
+            <td>Poradenství a styling</td>
+            <td class="price">500 Kč</td>
+            <td>
+                - Osobní styling vlasů a vousů<br>
+                - Doporučení produktů<br>
+                - Tipy na úpravu doma
+            </td>
+        </tr>
+    </table>
+</div>
+
+</section>
+<section id="kontakty" class="flex_section">
+    <div class="txt_block">
+        <div style="margin: 0 0 20% 0;">
+            <h1>Kontakty</h1>
+            <p><strong>Adresa</strong>: Hudcova 67/41 Brno</p>
+            <p><strong>Telefonní číslo</strong>: +420 303 495 789</p>
+            <p><strong>Email</strong>: kadernictvi@hlavanehlava.cz</p>
+        </div>  
+    </div>
+    <iframe class="txt_img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162.81655300156743!2d16.580519377731047!3d49.237259714561546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471291560c57cd93%3A0xdb51fab93450b97c!2sHudcova%2067%2C%20621%2000%20Brno-Medl%C3%A1nky!5e0!3m2!1sen!2scz!4v1764113913727!5m2!1sen!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
 
-<section id="galerie">
-    <h1>Galerie</h1>
+<section id="rezervace">
+    <h1 style="text-align: center;">Rezervace</h1>
+    <script type="text/javascript" src="https://form.jotform.com/jsform/253161853497061"></script>
 </section>
-
-<section id="kontakty">
-    <h1>Kontakty</h1>
-</section>
-
 
 <footer>
     <p><strong>Kadeřnictví hlava</strong> — © 2025</p>
     <p><a href="https://tomandesmsh.github.io/EducaGroup/disclaimer.html">Disclaimer</a></p>
 </footer>
-</body>
-</html>
-
 
 </body>
 </html>

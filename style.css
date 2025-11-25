@@ -1,11 +1,12 @@
 html {
     scroll-behavior: smooth;
+    background-color: #FFFAFA;
 
 }
 
 body {
     margin: 0;
-    font-family: "Open Sans"
+    font-family: "Open Sans";
 }
 
 h1, h2, p {
@@ -56,11 +57,10 @@ h1, h2, p {
     position: relative;
     font-size: 24px;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: black;
     transition: 0.2s;
 }
 
-/* ChatGPT dopomohlo, bo ja nevim jak se exkludujou typy elementu */
 .nav a:not(:has(img))::after {
     content: "";
     position: absolute;
@@ -69,7 +69,7 @@ h1, h2, p {
     width: 0;
     height: 0;
     background-color: #7b4f44;
-    transition: width 0.3s, height 0.3s, left 0.3s, top 0.3s;
+    transition: 0.3s;
     z-index: -1;
     border-radius: 20px;
 }
@@ -86,34 +86,85 @@ h1, h2, p {
 }
 
 section {
-    padding: 50px 30px 40px 30px; /* hore, pravo, dole, levo */ 
+    padding: 50px 30px;
 }
 
-section h1 {
-    font-size: 48px;
+.cenik {
     text-align: center;
+    padding: 50px;
 }
 
-section h2 {
-    text-align: center;
-}
-
-section h2, section p {
+table {
     margin: 0 auto;
-    
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 900px;
+    background-color: #ddd6d6;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 1px solid;
 }
 
+th, td {
+    padding: 20px;
+    border: 1px solid #666464;
+}
 
-section p {
-    font-size: 20px;
-    max-width: 50%;
+th {
+    background-color: #d3906b;  
+    color: white;
+    font-size: 1.2em;
+}
+
+td {
+    font-size: 1em;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+}
+
+.flex_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 footer {
-  width: 980px;
-  margin: 18px auto;
-  padding: 12px;
-  text-align: center;
-  color: #666;
-  font-family: sans-serif; font-size: 14px;
+    width: 980px;
+    margin: 18px auto;
+    padding: 12px;
+    text-align: center;
+    color: #666;
+    font-family: sans-serif;
+    font-size: 14px;
 }
+
+.objbutton {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    font-size: 19px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.txt_block {
+    max-width: 40%;
+}
+
+.txt_img {
+    max-width: 30%;
+    transition: transform 0.3s;
+}
+
+.txt_img:hover{
+    transform: scale(1.1);
+}
+
